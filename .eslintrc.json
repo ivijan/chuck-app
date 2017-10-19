@@ -1,0 +1,27 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "env": {
+        "node": true
+    },
+    "plugins": [
+        "promise"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:promise/recommended"
+    ],
+    "globals": {
+        "before": false,
+        "describe": false,
+        "it": false
+    },
+    "rules": {
+        "semi": [2, "always"],
+        "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+        "no-const-assign": [
+            "error"
+        ]
+    }
+}
